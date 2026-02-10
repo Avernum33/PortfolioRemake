@@ -1,0 +1,30 @@
+body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f4; }
+
+.presentation { text-align: center; padding: 50px 0; background: #333; color: white; margin-bottom: 30px; }
+
+/* Style des catégories déroulantes */
+.category { margin-bottom: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+summary { font-size: 1.5rem; font-weight: bold; padding: 15px; cursor: pointer; border-bottom: 1px solid #eee; }
+
+/* Grille de projets */
+.project-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+/* Style des cartes projets */
+.project-card { 
+    text-decoration: none; 
+    color: inherit; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    background: #fff;
+}
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.project-card img { width: 100%; height: 150px; object-fit: cover; }
+.project-info { padding: 15px; }
+.project-info h3 { margin-top: 0; color: #007bff; }
